@@ -1,0 +1,6 @@
+.head__logo-buscar{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%;
+}

@@ -4,8 +4,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/boton.css">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/head/head-boton.css">
+    <link rel="stylesheet" href="css/head/head-buscar.css">
+    <link rel="stylesheet" href="css/head/head-logo-buscar.css">
+    <link rel="stylesheet" href="css/head/head-logo.css">
+
 </head>
 <body>
-    
+    <section class="head container">
+        <div class="head__logo-buscar">
+            <img src="img/logo_alura-geek.png" alt="logo_alurageek" class="head__logo">
+            <div class="head__buscar" id="head__buscar">
+                <label id="buscar__lupa" for="buscar">&#128270</label>
+                <input type="text" id="buscar__barra" placeholder="¿Qué deseas buscar?">
+            </div>
+        </div>
+        <button class="head__boton boton" id="login">
+            <a href="#" class="link" id="link__login">Login</a>
+        </button>
+    </section>
+    <script src="js/animaciones/barra-buscar.js"></script>
 </body>
 </html>

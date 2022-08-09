@@ -1,0 +1,20 @@
+.head__buscar{
+    display: flex;
+    align-items: center;
+    background:  #F5F5F5;
+    padding: .5rem ;
+    border-radius: 20px;
+    width: 60%;
+}
+#buscar__barra{
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+}
+#buscar__barra::placeholder{
+    color: #A2A2A2;
+}
+
+.head__buscar:hover{
+    border: 1px solid #225497;
+}
