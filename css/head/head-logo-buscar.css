@@ -4,3 +4,13 @@
     box-sizing: border-box;
     width: 80%;
 }
+@media screen and (min-width:996px) {
+    .head__logo-buscar{
+
+    }
+}
+@media screen and (min-width:600px) {
+    .head__logo-buscar{
+
+    }
+}

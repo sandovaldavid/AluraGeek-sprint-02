@@ -1,5 +1,14 @@
-.container{
-    padding-top: 2.5rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
+@media screen and (min-width:996px) {
+    .container{
+        padding-top: 2.5rem;
+        padding-right: 10rem;
+        padding-left: 10rem;
+    } 
+}
+@media screen and (min-width:600px) {
+    .container{
+        padding-top: 1.5rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    } 
 }

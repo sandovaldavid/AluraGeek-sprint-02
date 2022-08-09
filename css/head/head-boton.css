@@ -1,7 +1,17 @@
 .head__boton{
-    padding: .75rem 5rem;
     margin-left: 1rem;
     background: #F5F5F5;
     border: none;
     border: 1px solid #2A7AE4;
+}
+@media screen and (min-width:996px) {
+    .head__boton{
+        padding: .75rem 5rem;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .head__boton{
+        padding: .25rem 2rem;
+    }
 }
