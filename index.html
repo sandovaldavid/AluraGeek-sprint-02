@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="css/producto/producto-titulo.css">
     <link rel="stylesheet" href="css/seccion/seccion-link.css">
     <link rel="stylesheet" href="css/seccion/seccion-head.css">
+    <link rel="stylesheet" href="css/rodapie.css">
+    <link rel="stylesheet" href="css/rodapie/rodapie-imagen.css">
+    <link rel="stylesheet" href="css/rodapie/rodapie-sobreNosotros.css">
+    <link rel="stylesheet" href="css/rodapie/sobreNosotros.css">
 
 </head>
 <body>
@@ -187,6 +191,26 @@
                     <a href="" class="producto__link">Ver producto</a>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="rodapie container">
+        <img src="img/logo_alura-geek.png" alt="logo_alurageek" class="rodapie__imagen">
+        <div class="rodapie__sobreNosotros">
+            <ul class="lista__sobreNosotros">
+                <li class="item__sobreNosotros"><a href="#">Quienes somos</a></li>
+                <li class="item__sobreNosotros"><a href="#">Politica de privacidad</a></li>
+                <li class="item__sobreNosotros"><a href="#">Programa de fidelidad</a></li>
+                <li class="item__sobreNosotros"><a href="#">Nuestras Tiendas</a></li>
+                <li class="item__sobreNosotros"><a href="#">Quiero ser franquiciado</a></li>
+                <li class="item__sobreNosotros"><a href="#">Anuncie aqui</a></li>
+            </ul>
+            <form class="form__sobreNosotros">
+                <h2 class="form__titulo">Hable con nosotros</h2>
+                <label class="form__label" for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form__input" required>
+                <TEXtarea  id="mensaje" class="form__input" required placeholder="Escribe tu mensaje"></TEXtarea>
+                <input type="submit" value="Enviar Mensaje" class="enviar boton" id="enviar">
+            </form>
         </div>
     </section>
     <script src="js/animaciones/barra-buscar.js"></script>

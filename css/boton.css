@@ -1,5 +1,9 @@
 .boton{
     transition: 0.5s;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 .boton:hover{
     opacity: 0.2;

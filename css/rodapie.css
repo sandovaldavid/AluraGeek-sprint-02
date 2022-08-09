@@ -1,0 +1,7 @@
+.rodapie{
+    display: flex;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+    background: #EAF2FD;
+    font-family: 'Raleway', sans-serif;
+}
