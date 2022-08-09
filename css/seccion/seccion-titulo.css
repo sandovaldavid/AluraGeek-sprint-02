@@ -1,6 +1,15 @@
 .seccion__titulo{
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
     line-height: 38px;
+}
+@media screen and (min-width:996px) {
+    .seccion__titulo{
+        font-size: 32px;
+    }
+}
+@media screen and (min-width:600px) {
+    .seccion__titulo{
+        font-size: 22px;
+    }
 }

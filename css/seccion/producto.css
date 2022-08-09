@@ -1,3 +1,19 @@
-.producto{
-    width: 15%;
+@media screen and (min-width:996px) {
+    .producto{
+        width: 15%;
+    }
+}
+@media screen and (max-width:996px) {
+    #seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
+        display: none;
+    }
+    #seccion__consolas .producto:nth-child(5), #seccion__consolas .producto:nth-child(6){
+        display: none;
+    }
+    #seccion__diversos .producto:nth-child(5), #seccion__diversos .producto:nth-child(6){
+        display: none;
+    }
+    .producto{
+        width: 23%;
+    }
 }
