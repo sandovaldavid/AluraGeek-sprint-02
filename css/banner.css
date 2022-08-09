@@ -1,0 +1,9 @@
+.banner{
+    background: url(../img/banner-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
