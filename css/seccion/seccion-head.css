@@ -1,0 +1,6 @@
+.seccion__head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    align-items: center;
+}
