@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-AluraGeek</title>
+    <title>Agregar Producto - AluraGeek</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="css/head/head-buscar.css">
     <link rel="stylesheet" href="css/head/head-logo-buscar.css">
     <link rel="stylesheet" href="css/head/head-logo.css">
-
+    <link rel="stylesheet" href="css/nuevoProducto.css">
+    <link rel="stylesheet" href="css/nuevoProducto/nuevoProducto-form.css">
+    <link rel="stylesheet" href="css/nuevoProducto/nuevoProducto-titulo.css">
+    <link rel="stylesheet" href="css/nuevoProducto__form/botonAgregarProducto.css">
+    <link rel="stylesheet" href="css/nuevoProducto__form/form-input-nuevoProducto.css">
+    <link rel="stylesheet" href="css/nuevoProducto__form/form-label-nuevoProducto.css">
 
     <link rel="stylesheet" href="css/rodapie.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-imagen.css">
@@ -23,6 +28,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/footer/footer-texto.css">
     <link rel="stylesheet" href="css/footer/footer-titulo.css">
+    <link rel="stylesheet" href="css/head/head-boton.css">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/boton.css">
 </head>
 <body>
     <section class="head container">
@@ -33,9 +41,22 @@
                 <input type="text" id="buscar__barra" placeholder="¿Qué deseas buscar?">
             </div>
         </div>
+        <button class="head__boton  boton" id="menuAdministrador">Menú Administrador</button>
     </section>
-    <section class="login">
-        
+    <section class="nuevoProducto container">
+        <h2 class="nuevoProducto__titulo">Agregar nuevo producto</h2>
+        <form class="nuevoProducto__form">
+            <label class="form__label form__label__nuevoProducto" for="url">URL de imagen</label>
+            <input type="text" id="url" class="form__input form__input___nuevoProducto" required>
+            <label class="form__label form__label__nuevoProducto" for="categoria">Categoría</label>
+            <input type="text" id="categoria" class="form__input form__input___nuevoProducto" required>
+            <label class="form__label form__label__nuevoProducto" for="nombreProducto">Nombre del producto</label>
+            <input type="text" id="nombreProducto" class="form__input form__input___nuevoProducto" required>
+            <label class="form__label form__label__nuevoProducto" for="precio">Precio del producto</label>
+            <input type="text" id="precio" class="form__input form__input___nuevoProducto" required>
+            <TEXtarea  id="mensaje" class="form__input form__input___nuevoProducto" required placeholder="Descripción del producto"></TEXtarea>
+            <input type="submit" value="Agregar Producto" class="enviar boton botonAgregarProducto" id="botonAgregarProducto">
+        </form>
     </section>
     <section class="rodapie container">
         <img src="img/logo_alura-geek.png" alt="logo_alurageek" class="rodapie__imagen">
