@@ -1,6 +1,6 @@
 @media screen and (max-width:600px) {
     .producto{
-        width: calc(50% - .5rem);
+        width: calc(50% - 0.5rem);
     }
 #seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
         display: none;
@@ -12,7 +12,7 @@
         display: none;
     }
 }
-@media screen and (min-width:600px) {
+@media screen and (max-width:996px) {
     #seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
         display: none;
     }
@@ -29,5 +29,6 @@
 @media screen and (min-width:996px) {
     .producto{
         width: 15%;
+        display: block;
     }
 }
