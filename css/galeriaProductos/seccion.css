@@ -1,4 +1,16 @@
 .seccion{
-    padding-top: 2rem;
     padding-bottom: 2rem;
+}
+@media screen and (min-width:600px) {
+    .seccion{
+        padding-top: 0;
+    }
+    .seccion:last-child{
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width:996px) {
+    .seccion{
+        padding-top: 2rem;
+    }
 }

@@ -1,6 +1,5 @@
 .rodapie__sobreNosotros{
     display: flex;
-    width: 75%;
     justify-content: space-between;
 }
 .lista__sobreNosotros{
@@ -65,4 +64,22 @@
     height: 5rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width:600px) {
+    .rodapie__sobreNosotros{
+        width: 100%;
+    }
+    .lista__sobreNosotros{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width:996px) {
+    .rodapie__sobreNosotros{
+        width: 75%;
+    }
+    .lista__sobreNosotros{
+        margin-top: 0px;
+    }
 }

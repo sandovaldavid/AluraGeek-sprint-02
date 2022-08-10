@@ -3,3 +3,13 @@
     height: 55px;
     margin-right: 2rem;
 }
+@media screen and (min-width:600px) {
+    .rodapie__imagen{
+        position: absolute;
+    }
+}
+@media screen and (min-width:996px) {
+    .rodapie__imagen{
+        position: relative;
+    }
+}

@@ -1,15 +1,13 @@
-.head__logo{
-    width: 176;
-}
-@media screen and (min-width:996px) {
-    .head__logo{
-        width: 176px;
-        padding-right: 2rem;
-    }
-}
 @media screen and (min-width:600px) {
     .head__logo{
         width: 100px;
         padding-right: 1rem;
+    }
+}
+
+@media screen and (min-width:996px) {
+    .head__logo{
+        width: 176px;
+        padding-right: 2rem;
     }
 }
