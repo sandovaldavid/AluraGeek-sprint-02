@@ -1,0 +1,10 @@
+.login{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/head/head-buscar.css">
     <link rel="stylesheet" href="css/head/head-logo-buscar.css">
     <link rel="stylesheet" href="css/head/head-logo.css">
-
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login/login-form.css">
+    <link rel="stylesheet" href="css/login/login-titulo.css">
 
     <link rel="stylesheet" href="css/rodapie.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-imagen.css">
@@ -34,8 +36,13 @@
             </div>
         </div>
     </section>
-    <section class="login">
-        
+    <section class="login container">
+        <h2 class="login__titulo">Iniciar Sesión</h2>
+        <form class="login__form">
+            <input type="text" id="login__email" class="form__input" required placeholder="Escriba su correo electrónico">
+            <input type="text" id="login__clave" class="form__input" required placeholder="Escriba su contraseña">
+            <input type="submit" value="Entrar" class="enviar boton" id="enviar__login">
+        </form>
     </section>
     <section class="rodapie container">
         <img src="img/logo_alura-geek.png" alt="logo_alurageek" class="rodapie__imagen">
