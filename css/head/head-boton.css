@@ -4,7 +4,13 @@
     border: none;
     border: 1px solid #2A7AE4;
 }
-
+@media screen and (max-width:600px) {
+    .head__boton{
+        position: absolute;
+        margin-right: 80px;
+        padding: .5rem 2rem;
+    }
+}
 @media screen and (min-width:600px) {
     .head__boton{
         padding: .25rem 2rem;

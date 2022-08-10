@@ -6,13 +6,20 @@
     height: 4rem;
     font-family: 'Raleway', sans-serif;
 }
-@media screen and (min-width:996px) {
+@media screen and (max-width:600px) {
     .head{
-        padding-bottom: 2.5rem;
+        height: auto;
+        justify-content: end;
+        padding-bottom: 1rem;
     }
 }
 @media screen and (min-width:600px) {
     .head{
         padding-bottom: .5rem;
+    }
+}
+@media screen and (min-width:996px) {
+    .head{
+        padding-bottom: 2.5rem;
     }
 }

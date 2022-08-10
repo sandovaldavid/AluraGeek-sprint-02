@@ -5,3 +5,10 @@
     background: #EAF2FD;
     font-family: 'Raleway', sans-serif;
 }
+@media screen and (max-width:600px) {
+    .rodapie{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

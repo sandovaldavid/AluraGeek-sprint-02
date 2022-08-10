@@ -65,7 +65,24 @@
     padding-top: 1rem;
     margin-bottom: 1rem;
 }
+@media screen and (max-width:600px) {
+    .rodapie__sobreNosotros{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lista__sobreNosotros{
+        margin: 1rem auto;
+        width: auto;
+    }
+    .form__sobreNosotros{
+        width: auto;
+    }
+    .enviar{
+        width: 50%;
+    }
 
+}
 @media screen and (min-width:600px) {
     .rodapie__sobreNosotros{
         width: 100%;

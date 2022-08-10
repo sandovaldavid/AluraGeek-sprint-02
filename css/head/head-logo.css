@@ -1,3 +1,9 @@
+@media screen and (max-width:600px) {
+    .head__logo{
+        width: 100px;
+        padding-right: .5rem;
+    }
+}
 @media screen and (min-width:600px) {
     .head__logo{
         width: 100px;

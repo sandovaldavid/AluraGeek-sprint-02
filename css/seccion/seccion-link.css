@@ -5,3 +5,8 @@
     line-height: 19px;
     color: #2A7AE4;
 }
+@media screen and (max-width:600px) {
+    .seccion__link{
+        font-size: 14px;
+    }
+}

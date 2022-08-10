@@ -1,9 +1,18 @@
-@media screen and (min-width:996px) {
+@media screen and (max-width:600px) {
     .producto{
-        width: 15%;
+        width: calc(50% - .5rem);
+    }
+#seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
+        display: none;
+    }
+#seccion__consolas .producto:nth-child(5), #seccion__consolas .producto:nth-child(6){
+        display: none;
+    }
+#seccion__diversos .producto:nth-child(5), #seccion__diversos .producto:nth-child(6){
+        display: none;
     }
 }
-@media screen and (max-width:996px) {
+@media screen and (min-width:600px) {
     #seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
         display: none;
     }
@@ -15,5 +24,10 @@
     }
     .producto{
         width: 23%;
+    }
+}
+@media screen and (min-width:996px) {
+    .producto{
+        width: 15%;
     }
 }
