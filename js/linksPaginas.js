@@ -9,3 +9,5 @@ const navegarEnLaPagina = (btn_id, id) => {
 };
 
 navegarEnLaPagina("#botonVerConsolas", "consolas");
+
+const siguientePafina = () => {};

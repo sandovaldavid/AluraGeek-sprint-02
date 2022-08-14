@@ -1,35 +1,57 @@
-
 @media screen and (max-width:996px) {
-    #seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
+
+    /*
+    #seccion__starWars .producto:nth-child(5),
+    #seccion__starWars .producto:nth-child(6) {
         display: none;
     }
-    #seccion__consolas .producto:nth-child(5), #seccion__consolas .producto:nth-child(6){
+
+    #seccion__consolas .producto:nth-child(5),
+    #seccion__consolas .producto:nth-child(6) {
         display: none;
     }
-    #seccion__diversos .producto:nth-child(5), #seccion__diversos .producto:nth-child(6){
+
+    #seccion__diversos .producto:nth-child(5),
+    #seccion__diversos .producto:nth-child(6) {
         display: none;
     }
-    .producto{
-        width: 23%;
+*/
+    .producto {
+        width: calc(100%/4 - 2rem);
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
+
 @media screen and (max-width:600px) {
-    .producto{
-        width: calc(50% - 0.5rem);
+    .producto {
+        width: calc(50% - 2rem);
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
-#seccion__starWars .producto:nth-child(5), #seccion__starWars .producto:nth-child(6){
+
+    /*
+    #seccion__starWars .producto:nth-child(5),
+    #seccion__starWars .producto:nth-child(6) {
         display: none;
     }
-#seccion__consolas .producto:nth-child(5), #seccion__consolas .producto:nth-child(6){
+
+    #seccion__consolas .producto:nth-child(5),
+    #seccion__consolas .producto:nth-child(6) {
         display: none;
     }
-#seccion__diversos .producto:nth-child(5), #seccion__diversos .producto:nth-child(6){
+
+    #seccion__diversos .producto:nth-child(5),
+    #seccion__diversos .producto:nth-child(6) {
         display: none;
     }
+    */
 }
+
 @media screen and (min-width:996px) {
-    .producto{
-        width: 15%;
-        display: block;
+    .producto {
+        width: calc(100%/6 - 2rem);
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }

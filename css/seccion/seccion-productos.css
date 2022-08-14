@@ -1,9 +1,10 @@
-.seccion__productos{
+.seccion__productos {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 @media screen and (max-width:600px) {
-    .seccion__productos{
+    .seccion__productos {
         flex-wrap: wrap;
     }
 }
