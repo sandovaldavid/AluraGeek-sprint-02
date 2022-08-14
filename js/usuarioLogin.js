@@ -11,8 +11,7 @@ btn_login.addEventListener("click", (event) => {
 const validaUsuario = (email, password) => {
     console.log(email, password);
     if (email == usuario.email && password == usuario.password) {
-        id = 001111;
-        window.location.href = `/productos_usuario.html?id=${id}`;
+        window.location.href = "/productos_usuario.html";
     } else {
         alert("passwod erronea");
     }
