@@ -1,16 +1,19 @@
-.seccion{
+.seccion {
     padding-bottom: 2rem;
 }
+
 @media screen and (min-width:600px) {
-    .seccion{
+    .seccion {
         padding-top: 0;
     }
-    .seccion:last-child{
+
+    .seccion:last-child {
         padding-bottom: 0;
     }
 }
+
 @media screen and (min-width:996px) {
-    .seccion{
+    .seccion {
         padding-top: 2rem;
     }
 }

@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="img/icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -37,10 +38,11 @@
     <link rel="stylesheet" href="css/rodapie.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-imagen.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-sobreNosotros.css">
-    <link rel="stylesheet" href="css/rodapie/sobreNosotros.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/footer/footer-texto.css">
     <link rel="stylesheet" href="css/footer/footer-titulo.css">
+    <link rel="stylesheet" href="css/rodapie-sobreNosotros/form__sobreNosotros.css">
+    <link rel="stylesheet" href="css/rodapie-sobreNosotros/lista-sobreNosotros.css">
 
 </head>
 <body>
@@ -58,7 +60,7 @@
         <div class="banner__informacion container">
             <h1 class="banner__titulo">Febrero Promocional</h1>
             <p class="banner__texto">Productos selecionados con 33% de descuento</p>
-            <a href="#consolas"><button class="banner__boton" id="botonLogin">Ver consolas</button></a>
+            <a href="" ><button class="banner__boton" id="botonVerConsolas">Ver consolas</button></a>
         </div>
     </section>
     <section class="galeriaProductos container"> 
@@ -106,9 +108,9 @@
                 </div>
             </div>
         </div>
-        <div class="seccion">
+        <div class="seccion" id="consolas">
                 <div class="seccion__head">
-                    <h2 class="seccion__titulo" id="consolas">Consolas</h2>
+                    <h2 class="seccion__titulo">Consolas</h2>
                     <a href="#" class="seccion__link">Ver todo &#129138</a>
                 </div>
                 <div class="seccion__productos"  id="seccion__consolas">
@@ -207,11 +209,17 @@
                 <li class="item__sobreNosotros"><a href="#">Anuncie aqui</a></li>
             </ul>
             <form class="form__sobreNosotros">
-                <h2 class="form__titulo">Hable con nosotros</h2>
-                <label class="form__label" for="nombre">Nombre</label>
-                <input type="text" id="nombre" class="form__input" required>
-                <TEXtarea  id="mensaje" class="form__input" required placeholder="Escribe tu mensaje"></TEXtarea>
-                <input type="submit" value="Enviar Mensaje" class="enviar boton" id="enviar">
+                <legend class="form__titulo">Hable con nosotros</legend>
+                <div class="input-container">
+                    <input type="text" id="nombre" class="input" required placeholder="Nombre" data-tipo="nombre" pattern="[\s\S]{1,40}"minlegth="1" maxlength="40">
+                    <label class="input-label" for="nombre">Nombre</label>
+                    <span class="input-mensaje-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <textarea  id="mensaje" class="input" required placeholder="Escribe tu mensaje" data-tipo="mensaje"  pattern="[\s\S]{1,120}"minlegth="1" maxlength="120"></textarea>    
+                    <span class="input-mensaje-error">Este campo no es valido</span>             
+                </div>
+                <button class="enviar boton">Enviar Mensaje</a>
             </form>
         </div>
     </section>
@@ -219,6 +227,8 @@
         <h2 class="footer__titulo">Desarrollado por David Sandoval</h2>
         <p class="footer__texto">2022</p>
     </footer>
-    <script src="js/animaciones/barra-buscar.js"></script>
+    <script src="js/linksPaginas.js"></script>
+    <script type="module" src="js/validaciones.js"></script>
+    <script type="module" src="js/inputs.js"></script>
 </body>
 </html>

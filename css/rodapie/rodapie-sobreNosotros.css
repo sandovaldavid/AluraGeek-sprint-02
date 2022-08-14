@@ -1,102 +1,26 @@
-.rodapie__sobreNosotros{
+.rodapie__sobreNosotros {
     display: flex;
     justify-content: space-between;
 }
-.lista__sobreNosotros{
-    width: 30%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-}
 
-.item__sobreNosotros{
-    padding-bottom: 1.5rem;
-}
-.form__sobreNosotros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 60%;
-}
-.form__titulo{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    padding-bottom: .5rem;
-}
-.form__input{
-    border: none;
-    outline: none;
-    padding: .5rem 1rem;
-}
-.form__input::placeholder{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #A2A2A2;
-}
-.form__label{
-    padding: .5rem 1rem 0px 1rem;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #A2A2A2;
-}
-.form__label , .form__input{
-    background: #FFFFFF;
-}
-.enviar{
-    width: 40%;
-    padding: 1rem;
-    color:#FFFFFF;
-    background: #2A7AE4;
-}
-#nombre{
-    margin-bottom: 1rem;
-}
-#mensaje{
-    height: 5rem;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-}
 @media screen and (max-width:600px) {
-    .rodapie__sobreNosotros{
+    .rodapie__sobreNosotros {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
     }
-    .lista__sobreNosotros{
-        margin: 1rem auto;
-        width: auto;
-    }
-    .form__sobreNosotros{
-        width: auto;
-    }
-    .enviar{
-        width: 50%;
-    }
 
 }
+
 @media screen and (min-width:600px) {
-    .rodapie__sobreNosotros{
+    .rodapie__sobreNosotros {
         width: 100%;
     }
-    .lista__sobreNosotros{
-        margin-top: 60px;
-    }
+
 }
 
 @media screen and (min-width:996px) {
-    .rodapie__sobreNosotros{
+    .rodapie__sobreNosotros {
         width: 75%;
-    }
-    .lista__sobreNosotros{
-        margin-top: 0px;
     }
 }

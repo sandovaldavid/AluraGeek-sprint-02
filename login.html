@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="css/rodapie.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-imagen.css">
     <link rel="stylesheet" href="css/rodapie/rodapie-sobreNosotros.css">
-    <link rel="stylesheet" href="css/rodapie/sobreNosotros.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/footer/footer-texto.css">
     <link rel="stylesheet" href="css/footer/footer-titulo.css">
+    <link rel="stylesheet" href="css/rodapie-sobreNosotros/form__sobreNosotros.css">
+    <link rel="stylesheet" href="css/rodapie-sobreNosotros/lista-sobreNosotros.css">
 </head>
 <body>
     <section class="head container">
@@ -37,10 +38,18 @@
         </div>
     </section>
     <section class="login container">
-        <h2 class="login__titulo">Iniciar Sesión</h2>
         <form class="login__form">
-            <input type="text" id="login__email" class="form__input" required placeholder="Escriba su correo electrónico">
-            <input type="text" id="login__clave" class="form__input" required placeholder="Escriba su contraseña">
+            <legend class="login__titulo">Iniciar Sesión</legend>
+            <div class="input-container">
+                <input type="email" id="login__email" class="form__input input" required placeholder="Escriba su correo electrónico" data-tipo="email" >
+                <label for="login__email" class="input-label">Email</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>     
+            </div>
+            <div class="input-container">
+                <input type="password" id="login__clave" class="form__input input" required placeholder="Escriba su contraseña" data-tipo="password" >
+                <label for="login__email" class="input-label" >Contraseña</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>     
+            </div>
             <input type="submit" value="Entrar" class="enviar boton" id="enviar__login">
         </form>
     </section>
@@ -56,11 +65,17 @@
                 <li class="item__sobreNosotros"><a href="#">Anuncie aqui</a></li>
             </ul>
             <form class="form__sobreNosotros">
-                <h2 class="form__titulo">Hable con nosotros</h2>
-                <label class="form__label" for="nombre">Nombre</label>
-                <input type="text" id="nombre" class="form__input" required>
-                <TEXtarea  id="mensaje" class="form__input" required placeholder="Escribe tu mensaje"></TEXtarea>
-                <input type="submit" value="Enviar Mensaje" class="enviar boton" id="enviar">
+                <legend class="form__titulo">Hable con nosotros</legend>
+                <div class="input-container">
+                    <input type="text" id="nombre" class="input" required placeholder="Nombre" data-tipo="nombre" pattern="[\s\S]{1,40}"minlegth="1" maxlength="40">
+                    <label class="input-label" for="nombre">Nombre</label>
+                    <span class="input-mensaje-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <textarea  id="mensaje" class="input" required placeholder="Escribe tu mensaje" data-tipo="mensaje" pattern="[\s\S]{1,120}"minlegth="1" maxlength="120"></textarea>    
+                    <span class="input-mensaje-error">Este campo no es valido</span>             
+                </div>
+                <button class="enviar boton">Enviar Mensaje</a>
             </form>
         </div>
     </section>
@@ -68,5 +83,7 @@
         <h2 class="footer__titulo">Desarrollado por David Sandoval</h2>
         <p class="footer__texto">2022</p>
     </footer>
+    <script type="module" src="js/validaciones.js"></script>
+    <script type="module" src="js/inputs.js"></script>
 </body>
 </html>

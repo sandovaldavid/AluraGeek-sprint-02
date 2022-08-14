@@ -1,0 +1,31 @@
+.lista__sobreNosotros {
+    width: 30%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.item__sobreNosotros {
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width:600px) {
+    .lista__sobreNosotros {
+        margin: 1rem auto;
+        width: auto;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .lista__sobreNosotros {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width:996px) {
+    .lista__sobreNosotros {
+        margin-top: 0px;
+    }
+}
