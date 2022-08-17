@@ -47,16 +47,32 @@
     <section class="nuevoProducto container">
         <h2 class="nuevoProducto__titulo">Agregar nuevo producto</h2>
         <form class="nuevoProducto__form">
-            <label class="form__label form__label__nuevoProducto" for="url">URL de imagen</label>
-            <input type="text" id="url" class="form__input form__input___nuevoProducto" required>
-            <label class="form__label form__label__nuevoProducto" for="categoria">Categoría</label>
-            <input type="text" id="categoria" class="form__input form__input___nuevoProducto" required>
-            <label class="form__label form__label__nuevoProducto" for="nombreProducto">Nombre del producto</label>
-            <input type="text" id="nombreProducto" class="form__input form__input___nuevoProducto" required>
-            <label class="form__label form__label__nuevoProducto" for="precio">Precio del producto</label>
-            <input type="text" id="precio" class="form__input form__input___nuevoProducto" required>
-            <TEXtarea  id="descripcion" class="form__input form__input___nuevoProducto" required placeholder="Descripción del producto"></TEXtarea>
-            <input type="submit" value="Agregar Producto" class="enviar boton botonAgregarProducto" id="botonAgregarProducto">
+            <div class="input-container">
+                <input type="text" id="url" class="input" required placeholder="URL de imagen">
+                <label class="input-label" for="url">URL de imagen</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
+            </div>
+            <div class="input-container">
+                <input type="text" id="categoria" class="input" required placeholder="Categoria">
+                <label class="input-label" for="categoria">Categoria</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
+            </div>
+            <div class="input-container">
+                <input type="text" id="NombreProducto" class="input" required placeholder="Nombre del producto">
+                <label class="input-label" for="NombreProducto">Nombre del producto</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
+            </div>
+            <div class="input-container">
+                <input type="text" id="precioProducto" class="input" required placeholder="Precio del producto">
+                <label class="input-label" for="precioProducto">Precio del producto</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
+            </div>
+            <div class="input-container">
+                <textarea style="height:5rem " type="text" id="descripcion" class="input" required placeholder="Descripción del producto"></textarea>
+                <label class="input-label" for="descripcion">Descripción del producto</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
+            </div>
+            
         </form>
     </section>
     <section class="rodapie container">
