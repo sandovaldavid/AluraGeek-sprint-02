@@ -37,10 +37,6 @@
     <section class="head container">
         <div class="head__logo-buscar">
             <img src="img/logo_alura-geek.png" alt="logo_alurageek" class="head__logo">
-            <div class="head__buscar" id="head__buscar">
-                <label id="buscar__lupa" for="buscar">&#128270</label>
-                <input type="text" id="buscar__barra" placeholder="¿Qué deseas buscar?">
-            </div>
         </div>
         <button class="head__boton  boton" id="menuAdministrador">Menú Administrador</button>
     </section>
@@ -48,27 +44,27 @@
         <h2 class="nuevoProducto__titulo">Agregar nuevo producto</h2>
         <form class="nuevoProducto__form">
             <div class="input-container">
-                <input type="text" id="url" class="input" required placeholder="URL de imagen">
+                <input type="text" id="url" class="input" required placeholder="URL de imagen" data-tipo="urlImagen">
                 <label class="input-label" for="url">URL de imagen</label>
                 <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <input type="text" id="categoria" class="input" required placeholder="Categoria">
+                <input type="text" id="categoria" class="input" required placeholder="Categoria" data-tipo="categoria">
                 <label class="input-label" for="categoria">Categoria</label>
                 <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <input type="text" id="NombreProducto" class="input" required placeholder="Nombre del producto">
+                <input type="text" id="NombreProducto" class="input" required placeholder="Nombre del producto" data-tipo="nombreProducto">
                 <label class="input-label" for="NombreProducto">Nombre del producto</label>
                 <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <input type="text" id="precioProducto" class="input" required placeholder="Precio del producto">
+                <input type="text" id="precioProducto" class="input" required placeholder="Precio del producto" data-tipo="precioProducto">
                 <label class="input-label" for="precioProducto">Precio del producto</label>
                 <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <textarea style="height:5rem " type="text" id="descripcion" class="input" required placeholder="Descripción del producto"></textarea>
+                <textarea style="height:5rem " type="text" id="descripcion" class="input" required placeholder="Descripción del producto" data-tipo="descripcion"></textarea>
                 <label class="input-label" for="descripcion">Descripción del producto</label>
                 <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
@@ -105,6 +101,6 @@
         <h2 class="footer__titulo">Desarrollado por David Sandoval</h2>
         <p class="footer__texto">2022</p>
     </footer>
-    <script type="module" src="js/validacionRodapie.js"></script>
+    <script type="module" src="js/validacionNuevoProducto.js"></script>
 </body>
 </html>

@@ -33,6 +33,27 @@ const mensajesDeError = {
     mensaje: {
         valueMissing: "Este campo mensaje no puede estar vacio.",
     },
+    imagen: {
+        valueMissing: "Este campo Imagen mensaje no puede estar vacio.",
+    },
+    urlImagen: {
+        valueMissing: "Este campo url de Imagen mensaje no puede estar vacio.",
+    },
+    categoria: {
+        valueMissing: "Este campo Categoria mensaje no puede estar vacio.",
+    },
+    nombreProducto: {
+        valueMissing:
+            "Este campo Nombre de Producto mensaje no puede estar vacio.",
+    },
+    precioProducto: {
+        valueMissing:
+            "Este campo Precio de Producto mensaje no puede estar vacio.",
+    },
+    descripcion: {
+        valueMissing:
+            "Este campo Descripcion de Producto mensaje no puede estar vacio.",
+    },
 };
 
 function mostrarMensajeError(tipoDeInput, input) {
