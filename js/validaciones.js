@@ -10,7 +10,7 @@ export function valida(input) {
         input.parentElement.classList.add("input-container--invalid");
         input.parentElement.querySelector(".input-mensaje-error").innerHTML =
             mostrarMensajeError(tipoDeInput, input);
-        console.log(false);
+        //console.log(false);
         //return false;
     }
 }

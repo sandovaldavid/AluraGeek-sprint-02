@@ -1,13 +1,22 @@
-const btn_login = document.querySelector("[data-login]");
+import { valida } from "./validaciones.js";
 
+const btn_login = document.querySelector("[data-login]");
+const email = document.querySelector("#login__email");
+const password = document.querySelector("#login__clave");
+email.addEventListener("blur", (input) => {
+    valida(input.target);
+});
+password.addEventListener("blur", (input) => {
+    valida(input.target);
+});
 const usuario = {
     email: "david@alura.com",
     password: "12345",
 };
 
 const estadoEmailUsuario = false;
-const emailUsuario = document.querySelector("#login__email").value;
-const passwordUsuario = document.querySelector("#login__clave").value;
+const emailUsuario = email.value;
+const passwordUsuario = password.value;
 /*
 emailUsuario.addEventListener("blur", (input) => {
     estadoEmailUsuario = valida(input.target);
