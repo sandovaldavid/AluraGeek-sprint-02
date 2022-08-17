@@ -41,16 +41,16 @@
         <form class="login__form">
             <legend class="login__titulo">Iniciar Sesión</legend>
             <div class="input-container">
-                <input type="email" id="login__email" class="form__input input" required placeholder="Escriba su correo electrónico" data-tipo="email" >
-                <label for="login__email" class="input-label">Email</label>
-                <span class="input-mensaje-error">Este campo no es valido</span>     
+                <input name="email" id="login__email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                <label class="input-label" for="login__email">Email</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
             <div class="input-container">
-                <input type="password" id="login__clave" class="form__input input" required placeholder="Escriba su contraseña" data-tipo="password" >
-                <label for="login__email" class="input-label" >Contraseña</label>
-                <span class="input-mensaje-error">Este campo no es valido</span>     
+                <input name="password" id="login__clave" class="input" type="password" placeholder="Contraseña" required data-tipo="password"  title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.">
+                <label class="input-label" for="login__clave">Contraseña</label>
+                <span class="input-mensaje-error">Este campo no es valido</span>
             </div>
-            <input type="submit" value="Entrar" class="enviar boton" id="enviar__login" data-login>
+            <button class="enviar boton" id="enviar__login" data-login>Enviar Mensaje</a>
         </form>
     </section>
     <section class="rodapie container">
@@ -83,8 +83,8 @@
         <h2 class="footer__titulo">Desarrollado por David Sandoval</h2>
         <p class="footer__texto">2022</p>
     </footer>
-    <script type="module" src="js/validaciones.js"></script>
     <script type="module" src="js/inputs.js"></script>
-    <script type="module" src="js/usuarioLogin.js"></script>
+    <script type="module" src="js/validaciones.js"></script>
+    <script src="js/usuarioLogin.js"></script>
 </body>
 </html>

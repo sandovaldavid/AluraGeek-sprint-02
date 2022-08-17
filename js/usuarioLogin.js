@@ -1,10 +1,22 @@
-import { usuario } from "./usuarios.js";
 const btn_login = document.querySelector("[data-login]");
+
+const usuario = {
+    email: "david@alura.com",
+    password: "12345",
+};
+
+const estadoEmailUsuario = false;
+const emailUsuario = document.querySelector("#login__email").value;
+const passwordUsuario = document.querySelector("#login__clave").value;
+/*
+emailUsuario.addEventListener("blur", (input) => {
+    estadoEmailUsuario = valida(input.target);
+});
+*/
 btn_login.addEventListener("click", (event) => {
     event.preventDefault();
     const emailUsuario = document.querySelector("#login__email").value;
     const passwordUsuario = document.querySelector("#login__clave").value;
-    console.log(emailUsuario, passwordUsuario);
     validaUsuario(emailUsuario, passwordUsuario);
 });
 

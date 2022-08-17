@@ -4,10 +4,14 @@ export function valida(input) {
         input.parentElement.classList.remove("input-container--invalid");
         input.parentElement.querySelector(".input-mensaje-error").innerHTML =
             "";
+        //console.log(true);
+        //return true;
     } else {
         input.parentElement.classList.add("input-container--invalid");
         input.parentElement.querySelector(".input-mensaje-error").innerHTML =
             mostrarMensajeError(tipoDeInput, input);
+        console.log(false);
+        //return false;
     }
 }
 
