@@ -1,8 +1,10 @@
 import { valida } from "./validaciones.js";
+import { siguientePagina } from "./linksPaginas.js";
 
 const btn_login = document.querySelector("[data-login]");
 const email = document.querySelector("#login__email");
 const password = document.querySelector("#login__clave");
+
 email.addEventListener("blur", (input) => {
     valida(input.target);
 });
